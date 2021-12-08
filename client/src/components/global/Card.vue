@@ -1,9 +1,7 @@
 <template>
     <div class="v-card">
         <div class="v-card__title">
-            <v-text variant="h5">
-                <slot name="title"/>
-            </v-text>
+            <slot name="title"/>
 
             <slot name="action"/>
         </div>
@@ -17,16 +15,17 @@
 <style lang="scss">
 .v-card {
     background: white;
-    padding: 1rem;
     border-radius: 16px;
 
     &__title {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: .5rem;
+        padding: 1.5rem;
     }
     &__content {
-        margin-top: 1rem;
+        padding-bottom: 1.5rem;
     }
 }
 </style>

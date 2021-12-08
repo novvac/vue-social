@@ -21,4 +21,14 @@ const props = defineProps({
 *, *::before, *::after {
     font-family: variables.$font-family;
 }
+.caption {
+    font-size: .8rem;
+    font-weight: 300;
+}
+.body-1 {
+    font-size: .9rem;
+    font-weight: 300;
+    line-height: 1.63;
+    text-align: justify;
+}
 </style>

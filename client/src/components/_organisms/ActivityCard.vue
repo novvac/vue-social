@@ -1,7 +1,9 @@
 <template>
     <v-card>
         <template v-slot:title>
-            Activity
+            <v-text variant="h4">
+                Activity
+            </v-text>
         </template>
 
         <template v-slot:action>

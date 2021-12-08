@@ -1,5 +1,6 @@
 <script setup>
 import ActivityCard from '@/components/_organisms/ActivityCard';
+import PostList from '@/components/_organisms/Post/PostList';
 </script>
 
 <template>
@@ -10,7 +11,7 @@ import ActivityCard from '@/components/_organisms/ActivityCard';
       </v-col>
 
       <v-col :size="{md: 8, lg: 6}">
-        posts
+        <PostList/>
       </v-col>
 
       <v-col :size="{xs: 12, md: 4, lg: 3}">

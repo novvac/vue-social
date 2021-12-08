@@ -17,6 +17,8 @@ const props = defineProps({
 .v-avatar {
     width: 42px;
     height: 42px;
+    max-height: 100%;
+    max-width: 100%;
     border-radius: 50%;
     overflow: hidden;
 
