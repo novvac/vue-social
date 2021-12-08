@@ -1,0 +1,41 @@
+// Small tablets and large smartphones (landscape view)
+$sm: 576px;
+
+// Small tablets (portrait view)
+$md: 768px;
+
+// Tablets and small desktops
+$lg: 992px;
+
+// Large tablets and desktops
+$xl: 1200px;
+
+@mixin xs {
+    @media screen and (min-width: 0) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media screen and (min-width: $sm) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media screen and (min-width: $md) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media screen and (min-width: $lg) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media screen and (min-width: $xl) {
+        @content;
+    }
+}
