@@ -7,9 +7,18 @@
 </template>
 
 <style scoped lang="scss">
+@import '../../scss/responsive';
+
 .container {
-    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+
+    @include xs {
+        max-width: 1280px;
+    }
+
+    @include xl {
+        max-width: 1500px;
+    }
 }
 </style>
