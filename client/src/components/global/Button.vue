@@ -32,6 +32,7 @@ const classes = computed(() => ({
     background: #f2f5f7;
     padding: .5rem 1rem;
     border-radius: 12px;
+    flex: none;
 
     &--icon {
         border-radius: 50%;

@@ -1,5 +1,5 @@
 <script setup>
-import User from '@/components/_molecules/User';
+import AvatarWithDetails from '@/components/_molecules/AvatarWithDetails';
 
 const postButtons = [
     {
@@ -24,7 +24,10 @@ const likeAvatars = [
 <template>
     <v-card class="post">
         <template v-slot:title>
-            <User :user="{}"/>
+            <AvatarWithDetails
+                title="John Doe"
+                subtitle="Rzeszów, 08.12.2021 - 16:43"
+            />
         </template>
 
         <template v-slot:action>

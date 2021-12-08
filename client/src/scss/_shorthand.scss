@@ -5,12 +5,15 @@
 
     &-light { font-weight: 300; }
     &-regular { font-weight: 400; }
+    &-medium { font-weight: 500; }
     &-bold { font-weight: 700; }
 }
 
 .d {
     &-flex { display: flex; }
     &-inline {
+        display: inline;
+        
         &-flex { display: inline-flex; }
         &-block { display: inline-block; }
     }

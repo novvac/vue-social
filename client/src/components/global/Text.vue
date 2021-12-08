@@ -31,4 +31,9 @@ const props = defineProps({
     line-height: 1.63;
     text-align: justify;
 }
+.body-2 {
+    font-size: .9rem;
+    font-weight: 300;
+    line-height: 1.3;
+}
 </style>

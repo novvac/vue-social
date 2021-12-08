@@ -7,7 +7,8 @@ import {
     faComment,
     faHeart,
     faShareNodes,
-    faBookmark
+    faBookmark,
+    faUserPlus
 } from '@fortawesome/pro-light-svg-icons';
 
 import {
@@ -22,7 +23,8 @@ library.add([
     faComment,
     faHeart,
     faShareNodes,
-    faBookmark
+    faBookmark,
+    faUserPlus
 ])
 
 export function initIcons(app) {
