@@ -43,7 +43,7 @@ const classes = computed(() => ({
         background: transparent;
         font-size: 1rem;
         padding: .75rem .5rem;
-        max-width: calc(100% - .5rem);
+        max-width: 100%;
 
         &::placeholder {
             color: rgba(0,0,0,.4);

@@ -11,4 +11,8 @@ import AppBar from '@/components/_organisms/AppBar';
 <style lang="scss">
 @use 'scss/reset';
 @use 'scss/shorthand';
+
+html {
+  background: #f3f5f7;
+}
 </style>

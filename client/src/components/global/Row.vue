@@ -1,10 +1,14 @@
+<script>
+
+</script>
+
 <template>
     <div class="v-row">
         <slot/>
     </div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .v-row {
     display: flex;
     align-items: center;

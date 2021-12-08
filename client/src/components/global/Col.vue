@@ -28,7 +28,9 @@ const cssProps = computed(() => {
 
 <template>
     <div class="v-col" :style="cssProps">
-        <slot/>
+        <div class="v-col__wrapper">
+            <slot/>
+        </div>
     </div>
 </template>
 
@@ -44,5 +46,9 @@ const cssProps = computed(() => {
     @include md { flex: 0 1 var(--md) }
     @include lg { flex: 0 1 var(--lg) }
     @include xl { flex: 0 1 var(--xl) }
+
+    &__wrapper {
+        padding: 0 1rem;
+    }
 }
 </style>

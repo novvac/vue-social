@@ -45,6 +45,7 @@ const icons = [
 
 <style lang="scss">
 .app-bar {
-    padding: 1.5rem 1rem;
+    background: white;
+    padding: 1.5rem 0;
 }
 </style>
