@@ -5,11 +5,13 @@ const props = defineProps({
     icon: Array,
     iconOptions: Object,
     text: Boolean,
+    avatar: Boolean
 })
 
 const classes = computed(() => ({
     'v-btn--icon': props.icon,
-    'v-btn--text': props.text
+    'v-btn--text': props.text,
+    'v-btn--avatar': props.avatar
 }))
 </script>
 
@@ -45,6 +47,11 @@ const classes = computed(() => ({
         &:hover {
             color: #222;
         }
+    }
+    &--avatar {
+        padding: 0;
+        width: 42px;
+        height: 42px;
     }
 }
 </style>

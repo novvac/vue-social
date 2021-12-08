@@ -1,3 +1,4 @@
+import Avatar from './Avatar.vue';
 import Button from './Button.vue';
 import Card from './Card.vue';
 import Col from './Col.vue';
@@ -7,6 +8,7 @@ import Row from './Row.vue';
 import Text from './Text.vue';
 
 export function initGlobalComponents(app) {
+    app.component("v-avatar", Avatar);
     app.component("v-btn", Button);
     app.component("v-card", Card);
     app.component("v-col", Col);

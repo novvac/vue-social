@@ -1,11 +1,19 @@
+<script>
+export default {
+    inheritAttrs: false,
+}
+</script>
+
 <script setup>
 import { computed, coputed } from 'vue';
+
 const props = defineProps({
     size: {
         type: Object,
         default: () => ({})
     }
 })
+
 const COL_SIZE = 8.333;
 const BREAKPOINTS = ['xs', 'sm', 'md', 'lg', 'xl'];
 
@@ -28,7 +36,7 @@ const cssProps = computed(() => {
 
 <template>
     <div class="v-col" :style="cssProps">
-        <div class="v-col__wrapper">
+        <div class="v-col__wrapper" v-bind="$attrs">
             <slot/>
         </div>
     </div>

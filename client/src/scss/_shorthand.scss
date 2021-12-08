@@ -7,3 +7,20 @@
     &-regular { font-weight: 400; }
     &-bold { font-weight: 700; }
 }
+
+.d {
+    &-flex { display: flex; }
+    &-inline {
+        &-flex { display: inline-flex; }
+        &-block { display: inline-block; }
+    }
+}
+
+.justify {
+    &-space-between { justify-content: space-between; }
+    &-end { justify-content: flex-end; }
+}
+
+.align {
+    &-center { align-items: center; }
+}

@@ -4,17 +4,19 @@ import Logo from '@/components/_atoms/Logo';
 const icons = [
     {
         name: 'square-plus',
+        title: "Add new post"
     },
     {
-        name: 'phone'
-    }
+        name: 'phone',
+        title: "Call to somebody"
+    },
 ]
 </script>
 
 <template>
     <header class="app-bar">
         <v-container>
-            <v-row>
+            <v-row class="align-center">
                 <v-col :size="{xs: 0, lg: 3}">
                     <Logo/>
                 </v-col>
@@ -30,13 +32,19 @@ const icons = [
                     </v-input>
                 </v-col>
 
-                <v-col :size="{xs: 6, sm: 4, lg: 3}" class="text-right">
+                <v-col :size="{xs: 6, sm: 4, lg: 3}" class="d-flex align-center justify-end">
                     <v-btn
                         v-for="icon in icons"
+                        :key="icon.name"
                         :icon="['fal', icon.name]"
                         :iconOptions="{size: 'lg'}"
-                        style="margin-left: .5rem"
+                        :title="icon.title"
+                        style="margin-right: .75rem"
                     />
+
+                    <v-btn avatar>
+                        <v-avatar src="https://www.w3schools.com/howto/img_avatar.png"/>
+                    </v-btn>
                 </v-col>
             </v-row>
         </v-container>
